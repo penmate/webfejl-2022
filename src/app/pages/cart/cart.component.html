@@ -1,0 +1,37 @@
+<!-- <div class="container">
+    <mat-card fxLayout fxLayoutGap="20px">
+    <h1>Kosár tartalma</h1>
+    <div *ngIf="inCart">    <img class="galleryImage" [src]="'assets/' + inCart + '.jpg'"/>
+</div>
+        <span>
+            <span><button mat-raised-button color="primary" (click)="buy()">MEGVESZEM!</button></span>
+            <span><button mat-raised-button color="primary" (click)="clear()">Ürít</button></span>
+        </span>
+    </div>
+    <div *ngIf="!inCart"><span><button mat-raised-button>Üres</button></span></div>
+</mat-card>
+</div>  -->
+
+
+
+<div class="main_component div-flex">
+
+    <mat-card class="div-flex">
+        <mat-card-header>
+            <mat-card-title><h1>Kosár Tartalma</h1></mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div *ngIf="inCart">    <img class="galleryImage" [src]="'assets/' + inCart + '.jpg'"/>
+                
+            </div>
+           
+                <div *ngIf="price">
+                    <span class="price"><p>Rendelés összege: {{price}} -Ft</p></span>
+                <span *ngIf="inCart"><button mat-raised-button color="primary" (click)="buy()">MEGVESZEM!</button></span>
+                <span *ngIf="inCart"><button mat-raised-button color="primary" (click)="clear()">Ürít</button></span>
+            </div>
+            <div *ngIf="!inCart"><span><button mat-stroked-button color="warn">Üres</button></span></div>
+        </mat-card-content>
+    </mat-card>
+</div>

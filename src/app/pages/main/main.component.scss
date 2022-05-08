@@ -1,0 +1,44 @@
+mat-card {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+}
+
+.green-color {
+    color:green;
+    font-weight: bold;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+mat-card-header {
+    display: initial;
+}
+
+.main_component {
+    height: 100vh;
+}
+
+.galleryImage{
+    width: 15%;
+    height: auto;
+}
+span {
+    padding: 5px 5px 5px 5px;
+}
+
+button{
+    width: 150px;
+}

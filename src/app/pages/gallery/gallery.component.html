@@ -1,0 +1,32 @@
+         <div class="main_component div-flex">
+
+            <mat-card class="div-flex">
+                <mat-card-header>
+                    <div><mat-card-title>Logged in as: {{user?.name?.lastname}} {{user?.name?.firstname}}</mat-card-title></div>
+                </mat-card-header>
+                
+                <div class="imgList">
+                    <mat-form-field appearance="fill">
+                        <mat-select (selectionChange)="reload()" [(ngModel)]="chosenImage">
+                            <mat-option *ngFor="let obj of galleryObject" [value]="obj">{{obj.id}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    
+                </div>
+                <mat-card-content>
+                    <mat-card-title *ngIf="chosenImage.price">{{chosenImage.user_name}}</mat-card-title>
+                    <img *ngIf="chosenImage.price" class="galleryImage" [src]="'assets/' + chosenImage.id + '.jpg'"/>
+        <div class="break"></div>
+        <div *ngIf="chosenImage.price">{{chosenImage.user_url}}</div>
+        <div  class="break"></div>
+        <div *ngIf="chosenImage.price">{{chosenImage.photo_url}}</div>
+        <div  *ngIf="chosenImage.price" class="padd"><span class="price">Ára: {{chosenImage.price}} -Ft</span></div>
+        <span>
+            <span *ngIf="chosenImage.price"><button  mat-raised-button color="primary" (click)="addToCart()">Kosárba!</button></span>
+        </span>
+                </mat-card-content>
+            </mat-card>
+        </div> 
+        
+
+

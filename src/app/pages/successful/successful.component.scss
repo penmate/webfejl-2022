@@ -1,0 +1,44 @@
+mat-card {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+}
+
+mat-card-header {
+    display: initial;
+}
+
+.green {
+    color: rgb(95, 160, 134);
+    font-size: 30px;
+}
+
+.main_component {
+    height: 100vh;
+}
+
+.text{
+    font-size: 15px;
+    color: darkgoldenrod;
+}
+
+.button {
+    padding: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active {
+    color: lightgray;
+}

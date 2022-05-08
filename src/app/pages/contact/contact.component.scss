@@ -1,0 +1,36 @@
+mat-card {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+}
+.green-color {
+    color:green;
+    font-weight: bold;
+
+}
+.font{
+    font-size: 17px;
+}
+mat-card-header {
+    display: initial;
+}
+
+.main_component {
+    height: 100vh;
+}
+
+.icon-display {
+    transform: scale(6);
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+ }
